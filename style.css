@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.125rem;
+    padding: 190px 0;
+}
+
+p, h1{
+    margin: 0;
+    color: white;
+    
+}
+
+main{
+    width: 90%;
+    max-width: 650px;
+    margin-inline: auto;
+    display: flex;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .1);
+    border-radius: 40px;
+}
+
+/* left section */
+.left-section{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 50%;
+    padding: 2.5em;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+.first-text p{
+    opacity: .6;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.num{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 100px;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 1em;
+}
+
+.num h1{
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.num p{
+    opacity: .6;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.second-text{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.second-text h1{
+    font-weight: 700;
+}
+
+.third-text{
+    text-align: center;
+    opacity: .6;
+    font-size: 1rem;
+}
+
+/* right section */
+.right-section{
+    width: 50%;
+    padding: 2.5em;
+    box-sizing: border-box;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.summary p{
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+
+.primary{
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: .8em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.left{
+    display: flex;
+    gap: .5em;
+}
+
+.left p{
+    color: hsl(0, 100%, 67%);
+}
+
+.right p{
+    color: hsl(224, 30%, 27%);
+}
+
+.right span{
+    color: hsl(241, 100%, 89%);
+}
+
+.reaction{
+    background-color: rgb(255, 246, 245);
+}
+
+.memory{
+    background-color: rgb(255, 251, 242);
+}
+
+.memory .left p{
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal{
+    background-color: rgb(242, 250, 250);
+}
+
+.verbal .left p{
+    color: hsl(166, 100%, 37%);
+}
+
+.visual{
+    background-color: rgb(243, 243, 253);
+}
+
+.visual .left p{
+    color: hsl(234, 85%, 45%);
+}
+
+button{
+    width: 100%;
+    border: none;
+    background-color: rgb(48, 59, 89);
+    padding: 1em 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    border-radius: 20px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+button:active{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+footer{
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer p{
+    color: hsl(224, 30%, 27%);
+}
+
+a{
+    color: hsl(241, 100%, 89%);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+/* mediq query */
+@media (min-width: 426px) and (max-width: 768px){
+    main{
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section{
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px){
+    body{
+        padding: 0;
+    }
+
+    main{
+        width: 100%;
+        flex-direction: column;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    .left-section,
+    .right-section{
+        width: 100%;
+    }
+
+    .left-section{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
