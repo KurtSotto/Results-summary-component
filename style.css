@@ -158,9 +158,10 @@ button{
     border-radius: 20px;
     margin-top: 1em;
     cursor: pointer;
+    transition: background-image .20s;
 }
 
-button:active{
+button:hover{
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
